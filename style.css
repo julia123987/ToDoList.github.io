@@ -1,0 +1,140 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Marck+Script&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+.bodyDark{
+    font-family: 'Marck Script', cursive;
+    background-color: rgba(0, 0, 0, 0.878);
+}
+.bodyLight{
+    font-family: 'Marck Script', cursive;
+    background-color: rgba(196, 196, 196, 0.878);
+}
+.themeIconDark{
+    position: fixed;
+    top: 35px;
+    right: 35px;
+    filter: invert(100%);
+    padding: 1%;
+    border-radius: 50%;
+    box-shadow: 0 0 15px 7px rgba(0, 0, 0, 0.525);
+    transition-duration: 0.5s;
+}
+.themeIconLight{
+    position: fixed;
+    top: 35px;
+    right: 35px;
+    filter: invert(0);
+    padding: 1%;
+    border-radius: 50%;
+    box-shadow: 0 0 15px 7px rgba(0, 0, 0, 0.525);
+    transition-duration: 0.5s;
+}
+.themeIconDark:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+   
+}
+h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+h1 img{
+    padding-left: 18px;
+    filter: invert(100);
+}
+
+#allList{
+    padding: 30px;
+    width: 60%;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    border-radius: 25px;
+    font-size: 140%;
+    background-color: rgb(7, 106, 80);
+    box-shadow: 0 0 20px 10px rgba(7, 106, 80, 0.407);
+    color: white;
+}
+#userForm input, #userItem input{
+    padding: 7px 45px;
+    margin: 10px 5px;
+    border-radius: 25px;
+    font-family: 'Marck Script', cursive;
+    background-color: rgba(3, 41, 31, 0.566);
+    border: 1px solid white;
+    color: white;
+}
+#userItem textarea{
+    padding: 7px 45px;
+    margin: 10px 5px;
+    border-radius: 15px;
+    font-family: 'Marck Script', cursive;
+    border: 1px solid white;
+    width: 60%;   
+}
+:hover#userForm input[type=button]{
+    cursor: pointer;
+}
+:hover#userItem input[type=button]{
+    cursor: pointer;
+}
+#userItem{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+#userItem div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 25px;
+    margin: 3px 0;
+    width: 100%;   
+}
+.themeItemDark div{
+    background-color: rgb(26, 39, 36);
+    border: 1px solid white;
+}
+.themeItemLight div{
+    background-color: rgb(118, 177, 163);
+    border: 1px solid rgb(0, 0, 0);
+    color: rgb(26, 39, 36);
+}
+#userItem div img{
+    filter: invert(100); 
+}
+#userItem div p{
+    padding: 5px;
+    margin: 7px 15px;
+    width: 80%; 
+}
+#userItem div img{
+    width: 35px;
+    height: 35px;
+    padding: 5px;
+    margin: 7px 15px;   
+}
+:hover #userItem div img{
+    cursor: pointer;
+}
+.done{
+    text-decoration: line-through;
+    color:  rgb(21, 241, 182);
+}
+.imgDone{
+    opacity: 50%;
+}
+span{
+    display: flex;
+    align-items: center;
+}
+
